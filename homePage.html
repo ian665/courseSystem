@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+  <div class="background">
+    <div class="homepage-container">
+      <header class="header">
+        <div class="header-inner">
+          <a class="header-logo" href="localhost:3000/home">放假大學</a>
+          <div class="header-site-menu">
+            <nav class="site-menu">
+              <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">選課規則</a></li>
+                <li><a href="#">通知</a></li>
+                <li><a href="#">私訊</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="module-container">
+        <!-- 左側個人資訊模塊 -->
+        <div class="module personal-info">
+          <h2>個人資訊</h2>
+          <p>姓名: 張三</p>
+          <p>學號: 2023101234</p>
+          <p>已修學分: 45</p>
+          <p>目前學期: 第5學期</p>
+        </div>
+
+        <!-- 中間課程檢索模塊 -->
+        <div class="module course-search">
+          <h2>課程檢索</h2>
+          <input type="text" placeholder="搜尋課程名稱或代碼" class="search-input">
+          <button class="search-button">搜尋</button>
+          <p>輸入課程名稱或代碼來查看可選課程。</p>
+        </div>
+
+        <!-- 右側個人課表模塊 -->
+        <div class="module course-schedule">
+          <h2>課表與已選課程</h2>
+          <img class="table" src="/images/table.jpg" alt="time table">
+          <ul class="selected-courses">
+            <li>
+              <button class="btn" onclick="alert('微積分 (星期一 09:00 - 10:30)')">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="text">微積分 (星期一 09:00 - 10:30)</span>
+              </button>
+            </li>
+            <!-- 其他課程按鈕可以同樣進行轉換 -->
+            <li>
+              <button class="btn" onclick="alert('計算機科學基礎 (星期三 14:00 - 16:00)')">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="text">計算機科學基礎 (星期三 14:00 - 16:00)</span>
+              </button>
+            </li>
+            <!-- 依此類推，將每個課程按鈕重複加入 -->
+            <li>
+              <button class="btn" onclick="alert('計算機科學基礎 (星期三 14:00 - 16:00)')">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="text">計算機科學基礎 (星期三 14:00 - 16:00)</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn" onclick="alert('計算機科學基礎 (星期三 14:00 - 16:00)')">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="text">計算機科學基礎 (星期三 14:00 - 16:00)</span>
+              </button>
+            </li>
+            <li>
+              <button class="btn" onclick="alert('計算機科學基礎 (星期三 14:00 - 16:00)')">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="text">計算機科學基礎 (星期三 14:00 - 16:00)</span>
+              </button>
+            </li>
+          </ul>
+          <button class="edit-schedule">編輯課表</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="HomePage.js"></script>
+</body>
+</html>

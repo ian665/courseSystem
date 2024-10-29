@@ -274,21 +274,62 @@ ul,ol{
   text-align: left;
 }
 
+.search-container{
+  display: flex;
+  width: 100%;
+}
+
+.condition{
+  display: flex;
+  flex-direction: row;
+}
+
 .homepage-container .search-input {
   width: 100%;
+  height: 40px;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .homepage-container .search-button {
-  padding: 8px 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 8px 8px;
   background-color: #3496ff;
+  font-weight: 700;
+  font-size: 17px;
   color: white;
   border: none;
-  border-radius: 4px;
+  width: 14%;
+  height: 40px;
+  border-radius: 0px 4px 4px 0px;
   cursor: pointer;
+}
+
+.logoutButton{
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 8px 8px;
+  background-color: #3496ff;
+  font-size: 15px;
+  color: white;
+  border: none;
+  font-weight: 600;
+  width: 28%;
+  height: 35px;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.homepage-container .logoutButton:hover {
+  background-color: #2979cc;
+}
+
+.homepage-container .logout{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 2px;
 }
 
 .homepage-container .search-button:hover {
@@ -299,6 +340,7 @@ ul,ol{
   list-style-type: none;
   padding: 0;
 }
+
 
 .homepage-container .selected-courses li {
   background-color: #f9f9f9;
